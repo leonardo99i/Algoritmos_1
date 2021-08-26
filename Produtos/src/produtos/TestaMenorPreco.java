@@ -17,8 +17,8 @@ public class TestaMenorPreco {
                 maisBarato = atual;
             }
         }
-        System.out.println("O mais barato é: " + maisBarato);
-        System.out.println("O carro mais barato custa R$ " + precos[maisBarato]);
+        System.out.println("O carro mais barato é: " + maisBarato);
+        System.out.println("O carro mais barato custa R$" + precos[maisBarato]);
     }
     
 }
