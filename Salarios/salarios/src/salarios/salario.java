@@ -13,19 +13,21 @@ public class salario {
         int atualMaior = 0;
         int atualMenor = 0;
 
-        for(atualMaior = 0; atualMaior <= 4; atualMaior++){
-            if(salarios[atualMaior] >= salarios[menorSalario]){
-                atualMaior = maiorSalario;
-            }
-        }
-
-        for(atualMenor = 0; atualMenor >= 4; atualMenor--){
+        for(atualMenor = 0; atualMenor >= salarios.length; atualMenor--){
             if(salarios[atualMenor] >= salarios[menorSalario]){
-                atualMenor = menorSalario;
+                salarios[menorSalario] = atualMenor;
             }
         }
 
-        System.out.println(maiorSalario);
-        System.out.println(menorSalario);
+        for(atualMaior = 0; atualMaior >= salarios.length; atualMaior++){
+            if(salarios[atualMaior] >= salarios[maiorSalario]){
+                salarios[maiorSalario] = atualMaior;
+            }
+        }
+
+        System.out.println("O maior salario é: " + atualMaior);
+        System.out.println("O menor salario é: " + atualMenor);
+
+
     }
 }
