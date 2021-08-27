@@ -27,7 +27,5 @@ public class salario {
 
         System.out.println("O maior salario é: " + atualMaior);
         System.out.println("O menor salario é: " + atualMenor);
-
-
     }
 }
